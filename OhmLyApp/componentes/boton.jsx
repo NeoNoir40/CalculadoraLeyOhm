@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   botonTexto: {
+    textAlign: 'center',
     color: '#FFFFFF',
+    fontWeight: 'bold',
   },
 });
