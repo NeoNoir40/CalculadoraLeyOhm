@@ -30,11 +30,11 @@ export default function Index({navigation}) {
       <View>
         <View style={[{marginTop: 30}]}></View>
       </View>
-      <View style={styles.botonContainer}>
-        <Boton texto={'En serie'} navigation={navigation} ruta={'Serie'} />
-        <Boton texto={'Paralelo'} navigation={navigation} ruta={'Paralelo'} />
+      <View style={[styles.botonContainer]}>
+        <Boton texto={'Circuto en  serie'} navigation={navigation} ruta={'Serie'} />
+        <Boton texto={'Circuiro en paralelo'} navigation={navigation} ruta={'Paralelo'} />
         <Boton
-          texto={'Calculadora'}
+          texto={'Calculadora '}
           navigation={navigation}
           ruta={'Calculadora'}
         />
@@ -58,6 +58,8 @@ const styles = StyleSheet.create({
   botonContainer: {
     marginTop: 40,
     flexDirection: 'row',
+    padding:10,
+
   },
   container: {
     flex: 1,

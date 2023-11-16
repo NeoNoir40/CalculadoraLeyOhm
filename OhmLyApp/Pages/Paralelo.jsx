@@ -90,7 +90,7 @@ export default function Paralelo({navigation}) {
           </Text>
         </View>
         <Text style={[{textAlign: 'center', marginTop: 10}]}>
-          !Tambien tenemos estas secciones que podrian interesarte¡
+          ¡Tambien tenemos estas secciones que podrian interesarte!
         </Text>
         <View style={[styles.botonContainer, {marginBottom: 10}]}>
           <Boton
@@ -119,6 +119,8 @@ export default function Paralelo({navigation}) {
                 color: '#000000',
                 fontWeight: 'bold',
                 marginTop: 20,
+                margin: 5,
+                textAlign:'center'
               },
             ]}>
             1-. Calcular el voltaje
@@ -172,6 +174,8 @@ export default function Paralelo({navigation}) {
                 color: '#000000',
                 fontWeight: 'bold',
                 marginTop: 20,
+                margin: 5,
+                textAlign:'center'
               },
             ]}>
             2-. Calcular la intensidad
@@ -226,6 +230,7 @@ export default function Paralelo({navigation}) {
                 color: '#000000',
                 fontWeight: 'bold',
                 marginTop: 20,
+                margin: 5
               },
             ]}>
             3-. Calcular la intensidad total
@@ -242,7 +247,7 @@ export default function Paralelo({navigation}) {
                 {voltajes.map(voltaje => (
                   <View key={voltaje.key} style={styles.resistanceContainer}>
                     <View style={styles.omegaContainer}>
-                      <Text style={styles.omegaText}>V {voltaje.key + 1}</Text>
+                      <Text style={styles.omegaText}>A {voltaje.key + 1}</Text>
                     </View>
                     <View style={styles.inputContainer}>
                       <TextInput

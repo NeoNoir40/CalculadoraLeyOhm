@@ -14,10 +14,12 @@ import {
 export default function Serie({navigation}) {
   const [resistances, setResistances] = useState([{key: 0, value: ''}]);
   const [totalResistance, setTotalResistance] = useState(0);
-  const [voltaje, setVoltaje] = useState('');
   const [intensidad, setIntensidad] = useState(0);
   const [voltajes, setVoltajes] = useState([{key: 0, value: ''}]);
   const [totalVoltaje, setTotalVoltaje] = useState(0);
+
+  const [voltaje, setVoltaje] = useState('');
+
 
   const addVoltajes = () => {
     if (voltajes.length < 10) {
@@ -124,6 +126,7 @@ export default function Serie({navigation}) {
                 color: '#000000',
                 fontWeight: 'bold',
                 marginTop: 20,
+                margin : 5
               },
             ]}>
             1-. Calcular la resistencia equivalente/total
@@ -205,6 +208,7 @@ export default function Serie({navigation}) {
               color: '#000000',
               fontWeight: 'bold',
               marginTop: 20,
+              margin: 5
             },
           ]}>
           2-. Calcular la intensidad del circuito
@@ -219,12 +223,12 @@ export default function Serie({navigation}) {
               <View style={{marginTop: 10, padding: 10}}>
                 <View style={styles.resistanceContainer}>
                   <View style={styles.omegaContainer}>
-                    <Text style={styles.omegaText}>Ω</Text>
+                    <Text style={styles.omegaText}>V</Text>
                   </View>
                   <View style={styles.inputContainer}>
                     <TextInput
                       style={styles.input}
-                      placeholder="Ingrese su intensidad"
+                      placeholder="Ingrese el voltaje"
                       keyboardType="numeric"
                       onChangeText={text => setVoltaje(text)}
                     />
@@ -260,6 +264,7 @@ export default function Serie({navigation}) {
                 color: '#000000',
                 fontWeight: 'bold',
                 marginTop: 20,
+                margin: 5
               },
             ]}>
             3-. Calcular el voltaje total
